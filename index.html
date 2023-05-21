@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link href="./estilos.css" rel="stylesheet" />
+    <script src="./jugabilidad.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <a target="_blank" href="https://en.wikipedia.org/wiki/Rock_paper_scissors"><h1 id="titulo" title="Juego de Piedra, Papel o Tijera">Piedra, Papel o Tijera</h1></a>
+        
+      </h1>
 
-<head>
-
-    <link href="./estilos.css" rel="stylesheet" >
-    <script src="./jugabilidad.js" ></script>
-
-
-</head>
-<body>
-
-    <h1 id="titulo" title="Juego de Piedra, Papel o Tijera">Piedra, Papel o Tijera</h1>
+      <button id="jugar" title="Jugar">Inicio</button>
+    </header>
 
     <div id="container">
-
-        
-
-        <div id="area_juego">
-
+      <div id="area_juego">
+        <div id="herramientas">
+          <img
+            src="./resources/piedra.png"
+            id="piedra"
+            title="Piedra"
+            alt="Piedra"
+            class="cosas"
+          />
+          <img
+            src="./resources/papel.png"
+            id="papel"
+            title="Papel"
+            alt="Papel"
+            class="cosas"
+          />
+          <img
+            src="./resources/tijeras.png"
+            id="tijeras"
+            title="Tijeras"
+            alt="Tijeras"
+            class="cosas"
+          />
         </div>
-        <div id="resultados">
 
-            <h2 id="titulo_resultados">Resultados</h2>
- 
-                <img class="jugadores" id="yo" title="Yo" alt="Jugador" src="./resources/icono.png">
-                <img class="jugadores" id="maquina" title="Bot" alt="Bot" src="./resources/bot.png">
+        <section>
+            <p id="mensaje"></p>
+        </section>
+      </div>
 
+      <div id="resultados">
+        <h2 id="titulo_resultados">Resultados</h2>
 
-
-        </div>
-
-
+        <img
+          class="jugadores"
+          id="yo"
+          title="Yo"
+          alt="Jugador"
+          src="./resources/icono.png"
+        />
+        <img
+          class="jugadores"
+          id="maquina"
+          title="Bot"
+          alt="Bot"
+          src="./resources/bot.png"
+        />
+      </div>
     </div>
-
-
-
-
-
-</body>
-
+  </body>
 </html>

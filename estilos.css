@@ -6,20 +6,24 @@ body{
 #container{
     width: 1350px;
     height: 650px;
-    background-color: rgb(177, 177, 177);
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 30px;
-    
+    margin-top: 10px; 
  
 }
+
+#container > div {
+    border-radius: 5px;
+  }
 
 #area_juego{
     width: 1095px;
     height: 650px;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -27,20 +31,49 @@ body{
     width: 255px;
     height: 650px;
     background-color: #333;
-    
-    
+}
 
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    height: 55px;
 }
 
 #titulo{
-    margin-bottom: 5px;
     text-align: center;
     letter-spacing: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     font-weight: bold;
-    font-size: 35px
-
+    font-size: 35px;
+    margin-left: 155px;
+    color: black;
 }
+
+button{
+    height: 35px;
+    margin-top: 25px;
+    width: 155px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #45a049;
+  }
+  
+  button:active {
+    background-color: #3e8e41;
+  }
 
 #titulo:hover{
     cursor: pointer;
@@ -55,7 +88,7 @@ body{
 
 .jugadores{
     width: 135px;
-    height: 95px;
+    height: 100px;
     margin-left: 55px;
     
 
@@ -77,4 +110,53 @@ body{
 #bot{
     margin-top: 55px;
 
+}
+
+#herramientas{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 175px;
+    margin-right: 25px
+}
+
+#piedra:hover{
+    cursor: pointer;
+}
+
+#tijeras:hover{
+    cursor: pointer;
+}
+
+#papel:hover{
+    cursor: pointer;
+}
+#piedra{
+    margin-left: 75px;
+}
+
+.cosas{
+    margin-right: 85px;
+}
+
+#papel{
+    margin-right: 55px;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 155px;
+    color: black;
+
+}
+
+#mensaje{
+    margin-left: 430px;
+    margin-top: 55px;
+    font-size: 25px;
 }
