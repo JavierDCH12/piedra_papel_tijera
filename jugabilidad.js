@@ -127,7 +127,6 @@ window.onload = function () {
         mensaje.style.height = "60px";
         mensaje.style.textAlign = "center";
         mensaje.style.paddingTop = "10px";
-
         mensaje.style.borderRadius = "5px";
         mensaje.textContent = "Punto para el bot";
       }
@@ -154,9 +153,12 @@ window.onload = function () {
           mensaje.style.height = "55px";
           mensaje.style.textAlign = "center";
           mensaje.style.borderRadius = "5px";
-          mensaje.innerHTML = 'Te ha derrotado la máquina... <span>&#x1F916;</span>';
+          mensaje.innerHTML = 'Te ha derrotado la máquina<span>&#x1F916;</span>';
 
         }
+        piedra_boton.disabled = true;
+        papel_boton.disabled = true;
+        tijeras_boton.disabled = true;
       }
     }
   
