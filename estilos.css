@@ -1,6 +1,7 @@
 body{
     background-color: rgb(97, 97, 97);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #333;
 }
 
 #container{
@@ -30,7 +31,8 @@ body{
 #resultados{
     width: 255px;
     height: 650px;
-    background-color: #333;
+   
+    background-color: rgb(97, 97, 97);
 }
 
 #header{
@@ -48,7 +50,7 @@ body{
     font-weight: bold;
     font-size: 35px;
     margin-left: 155px;
-    color: black;
+    color: white;
 }
 
 button{
@@ -164,6 +166,8 @@ a{
 
 .puntos{
     text-align: center;
+    color: white;
+    font-size: 25px;
 }
 
 #puntos_jugador{
