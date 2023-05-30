@@ -1,3 +1,4 @@
+
 body{
     background-color: rgb(97, 97, 97);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -173,4 +174,72 @@ a{
 
 #puntos_jugador{
     margin-top: -185px;
+}
+
+.empieza_jugador{
+    color: green;
+    background-color: lightgreen;
+    width: 255px;
+    height: 55px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.empieza_bot{
+    color: red;
+    background-color: salmon;
+    width: 255px;
+    height: 55px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.puntos_empate{
+    color: black;
+    background-color: yellow;
+    width: 255px;
+    height: 55px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.puntos_jugador{
+    color: green;
+    background-color: lightgreen;
+    width: 255px;
+    height: 55px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.puntos_bot{
+    color: red;
+    background-color: lightred;
+    width: 255px;
+    height: 55px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 10px;
+
+}
+
+.gana_jugador{
+    color: white;
+    background-color: green;
+    width: 350px;
+    height: 55px;
+    text-align: center;
+    border-radius: 5px;
+    padding-top: 10px;
+}
+
+.gana_maquina{
+    color: black;
+    background-color: lightred;
+    width: 350px;
+    height: 55px;
+    text-align: center;
+    border-radius: 5px;
+    
 }
