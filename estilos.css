@@ -7,7 +7,7 @@ body{
 
 #container{
     width: 1350px;
-    height: 650px;
+    height: 680px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -243,3 +243,21 @@ a{
     border-radius: 5px;
     
 }
+
+.footer{
+    background-color: #9f9f9f;
+    margin-top: 15px;
+    width: 1350px;
+    font-size: 20px;
+    text-decoration: none;
+    height: 35px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 3px;
+    margin-left: 75px;
+    opacity: 0.8;
+    border-radius: 5px;
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+

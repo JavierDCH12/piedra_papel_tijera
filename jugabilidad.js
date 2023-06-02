@@ -45,6 +45,9 @@ window.onload = function () {
         jugar_jugador();
       }
     }
+
+
+
     //Funcion JUGAR_BOT en la que le damos la funcionalidad a la eleccion de la maquina
     function jugar_bot() {
       const opcion_maquina = Math.floor(Math.random() * 3);
@@ -96,12 +99,8 @@ window.onload = function () {
       mensaje.textContent = "";
   
       if (opcion_jugador === opcion_maquina) {
-        console.log(puntos_jugador)
-        console.log(puntos_bot)
         puntos_bot += 1;
         puntos_jugador += 1;
-        console.log(puntos_jugador)
-        console.log(puntos_bot)
         document.getElementById('puntos_jugador').textContent = puntos_jugador;
         document.getElementById('puntos_bot').textContent = puntos_bot;
         mensaje.classList.add("puntos_empate");
@@ -111,9 +110,8 @@ window.onload = function () {
         (opcion_jugador === papel && opcion_maquina === piedra) ||
         (opcion_jugador === tijeras && opcion_maquina === papel)
       ) {
-        console.log(puntos_jugador)
+        
         puntos_jugador += 1;
-        console.log(puntos_jugador)
         document.getElementById('puntos_jugador').textContent = puntos_jugador;
         mensaje.classList.add("puntos_jugador");
         mensaje.textContent = "Has ganado el punto";
@@ -122,15 +120,19 @@ window.onload = function () {
         (opcion_jugador === piedra && opcion_maquina === papel) ||
         (opcion_jugador === papel && opcion_maquina === tijeras)
       ) {
-        console.log(puntos_bot)
         puntos_bot += 1;
-        console.log(puntos_bot)
         document.getElementById('puntos_bot').textContent = puntos_bot;
         mensaje.classList.add("puntos_bot");
         mensaje.textContent = "Punto para el bot";
       }
-  
 
+      fin_juego(); //Lamamos a la función para acabar el jugo
+    }
+
+   
+
+
+    function fin_juego(){
       // IF de salida para finalizar el juego si se supera la puntuación máxima programada
       if (puntos_jugador >= 5 || puntos_bot >= 5) {
         piedra_boton.removeEventListener('click', eventoPiedra);
@@ -152,6 +154,8 @@ window.onload = function () {
       }
     }
   
+
+
 
     //Llamamos a la función principal para comenzar el juego
     document.getElementById('jugar').addEventListener('click', empezar);
